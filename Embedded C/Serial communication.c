@@ -1,5 +1,4 @@
-//The objective of this code is to configure an 8051 microcontroller to transmit the 
-character 'B' over serial communication using a baud rate of 4800 bits per second.
+//The objective of this code is to configure an 8051 microcontroller to transmit the character 'B' over serial communication using a baud rate of 4800 bits per second.
 
 #include <reg51.h> // Include header file for 8051 microcontroller
 
