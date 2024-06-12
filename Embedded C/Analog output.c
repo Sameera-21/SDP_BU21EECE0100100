@@ -1,5 +1,4 @@
-//The objective of this code is to generate a PWM (Pulse Width Modulation) signal using an AVR microcontroller, specifically configuring it for an ATmega328P (commonly used in Arduino Uno). 
-The PWM signal is output on pin OC0A (PD6/Arduino pin 6)
+//The objective of this code is to generate a PWM (Pulse Width Modulation) signal using an AVR microcontroller, specifically configuring it for an ATmega328P (commonly used in Arduino Uno). The PWM signal is output on pin OC0A (PD6/Arduino pin 6)
 #include <avr/io.h> // AVR I/O definitions
 #include <util/delay.h> // Delay functions
 
