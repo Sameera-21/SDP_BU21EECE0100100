@@ -1,5 +1,5 @@
 //Program an 8051 microcontroller to control the output on port P1 based on the state of two input switches connected to port P2,
-demonstrating different output patterns for different switch combinations.
+//demonstrating different output patterns for different switch combinations.
 #include <reg51.h> // Include header file for 8051 microcontroller (assuming this file contains necessary definitions for the microcontroller being used)
 
 sbit sw1 = P2^1; // Define switch 1 connected to pin P2.1
