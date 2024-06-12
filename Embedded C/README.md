@@ -1,4 +1,6 @@
 **EMBEDDED_C**
+
+
 **1\. Bare-Metal LED Toggle**
 
 **Objective**: Create a program that toggles an LED on and off based on a toggle switch input. This aims to demonstrate basic digital input and output handling on a microcontroller.
