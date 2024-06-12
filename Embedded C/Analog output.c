@@ -1,5 +1,7 @@
-#include <avr/io.h>
-#include <util/delay.h>
+//The objective of this code is to generate a PWM (Pulse Width Modulation) signal using an AVR microcontroller, specifically configuring it for an ATmega328P (commonly used in Arduino Uno). 
+The PWM signal is output on pin OC0A (PD6/Arduino pin 6)
+#include <avr/io.h> // AVR I/O definitions
+#include <util/delay.h> // Delay functions
 
 void PWM_Init() {
     // Set Fast PWM mode with non-inverting output on OC0A (PD6/Arduino pin 6)
@@ -17,16 +19,16 @@ void set_PWM(uint8_t value) {
 }
 
 int main() {
-    PWM_Init();
+    PWM_Init(); // Initialize PWM settings
 
-    while (1) {
-        for (uint8_t duty = 0; duty <= 255; duty++) {
-            set_PWM(duty); // Increase duty cycle
+    while (1) { // Infinite loop
+        for (uint8_t duty = 0; duty <= 255; duty++) { // Increase duty cycle
+            set_PWM(duty); // Set PWM duty cycle
             _delay_ms(10); // Small delay
         }
         
-        for (uint8_t duty = 255; duty > 0; duty--) {
-            set_PWM(duty); // Decrease duty cycle
+        for (uint8_t duty = 255; duty > 0; duty--) { // Decrease duty cycle
+            set_PWM(duty); // Set PWM duty cycle
             _delay_ms(10); // Small delay
         }
     }
