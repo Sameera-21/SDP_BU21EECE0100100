@@ -1,5 +1,4 @@
-//Implement a program for an AVR microcontroller to read an analog voltage from a sensor connected to ADC channel 0, 
-and then use the obtained value to control the brightness of an LED through PWM (Pulse Width Modulation) on pin PD6 (Arduino pin 6).
+//Implement a program for an AVR microcontroller to read an analog voltage from a sensor connected to ADC channel 0, and then use the obtained value to control the brightness of an LED through PWM (Pulse Width Modulation) on pin PD6 (Arduino pin 6).
 
 #include <avr/io.h> // AVR I/O definitions
 #include <util/delay.h> // Delay functions
